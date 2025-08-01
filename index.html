@@ -1,149 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Nitesh Kamat</title>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-<style>
-  /* Reset */
-  * {
-    box-sizing: border-box;
-  }
-  body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    background: #f4f6f8;
-    color: #333;
-  }
-  header {
-    background: #004aad;
-    padding: 20px;
-    color: white;
-    text-align: center;
-  }
-  header h1 {
-    margin: 0;
-    font-weight: 700;
-    font-size: 2.5rem;
-    animation: fadeInDown 1s ease forwards;
-  }
-  nav {
-    margin-top: 10px;
-  }
-  nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
-  }
-  nav a:hover {
-    color: #ffd700;
-  }
-  main {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px;
-  }
-  section {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
-    animation: fadeInUp 1s ease forwards;
-  }
-  h2 {
-    color: #004aad;
-  }
-  button {
-    background: #004aad;
-    border: none;
-    padding: 15px 30px;
-    color: white;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-    margin-top: 20px;
-  }
-  button:hover {
-    background: #003377;
-  }
-  footer {
-    text-align: center;
-    padding: 20px;
-    background: #222;
-    color: white;
-    margin-top: 50px;
-  }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nitesh Kamat</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Base Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #f5f7fa;
+      color: #2c3e50;
+      line-height: 1.6;
+    }
 
-  /* Responsive */
-  @media (max-width: 600px) {
+    /* Header */
+    header {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 40px 20px 30px;
+    }
     header h1 {
-      font-size: 1.8rem;
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      animation: fadeInDown 0.8s ease-in-out;
     }
     nav a {
-      display: block;
-      margin: 10px 0;
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
     }
-  }
+    nav a:hover {
+      color: #ffcc00;
+    }
 
-  /* Animations */
-  @keyframes fadeInDown {
-    0% {
-      opacity: 0;
-      transform: translateY(-20px);
+    /* Main Sections */
+    main {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 0 20px;
     }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
+    section {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+      padding: 40px;
+      margin-bottom: 40px;
+      animation: fadeInUp 1s ease-in-out;
     }
-  }
-  @keyframes fadeInUp {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
+    section h2 {
+      color: #003366;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
     }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
+
+    /* Buttons */
+    button {
+      background: #003366;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
     }
-  }
-</style>
+    button:hover {
+      background: #001f4d;
+    }
+
+    /* Links */
+    a {
+      color: #003366;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 25px 20px;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      nav {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      section {
+        padding: 25px;
+      }
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
 
-<header>
-  <h1>Welcome to Nitesh Kamat</h1>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+  <header>
+    <h1>Nitesh Kamat</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<main>
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hi! I'm Nitesh Kamat, a passionate web developer focused on creating responsive and engaging websites.</p>
-  </section>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello! I'm Nitesh Kamat — a self-taught web developer based in Nepal. I enjoy building clean, functional, and user-friendly websites. My focus is on responsiveness, performance, and simplicity.</p>
+    </section>
 
-  <section id="projects" style="margin-top: 40px;">
-    <h2>Projects</h2>
-    <p>Explore some of my recent work below.</p>
-    <button onclick="alert('Projects coming soon!')">See Projects</button>
-  </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>Here are a few of the projects I've worked on recently.</p>
+      <button onclick="alert('Project gallery coming soon!')">View Projects</button>
+    </section>
 
-  <section id="contact" style="margin-top: 40px;">
-    <h2>Contact Me</h2>
-    <p>You can reach me via email at <a href="mailto:nitesh@example.com">nitesh0434@example.com</a></p>
-  </section>
-</main>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out to me via email at <a href="mailto:nitesh0434@example.com">nitesh0434@example.com</a>. I’m open to freelance work or collaborations.</p>
+    </section>
+  </main>
 
-<footer>
-  &copy; 2025 Nitesh Kamat. All rights reserved.
-</footer>
+  <footer>
+    &copy; 2025 Nitesh Kamat &nbsp;|&nbsp; Built with ❤️ and HTML/CSS
+  </footer>
 
 </body>
 </html>
